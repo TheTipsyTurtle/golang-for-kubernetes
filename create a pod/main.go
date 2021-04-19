@@ -66,18 +66,4 @@ func main() {
 	}
 	fmt.Printf("Created deployment %q.\n", result.GetObjectMeta().GetName())
 
-	// nodeList, err := clientset.CoreV1().Nodes().List(context.Background(), metav1.ListOptions{})
-	// if err != nil {
-	// 	panic(err)
-	// }
-	// for _, n := range nodeList.Items {
-	// 	fmt.Println(n.Name)
-	// }
-	// podsList, err := clientset.CoreV1().Pods("minikube").List(context.Background(), metav1.ListOptions{})
-	// if err != nil {
-	// 	panic(err)
-	// }
-	// for _, n := range podsList.Items {
-	// 	fmt.Println(n.Name)
-	// }
 }
